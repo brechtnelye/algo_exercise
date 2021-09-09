@@ -588,13 +588,13 @@ exports.createEmptyPit = algo_testing_framework_1.packSingleSolution(function cr
     }
     return result;
 });
-exports.rotateCW = ((width, height, createGrid) => {
+exports.rotateCW = ((width, height, createEmptyPit) => {
     const withFormula = function rotateCW(shape) {
         const shapeWidth = width(shape);
         const shapeHeight = height(shape);
         const rotatedWidth = shapeHeight;
         const rotatedHeight = shapeWidth;
-        const result = createGrid(shapeHeight, shapeWidth);
+        const result = createEmptyPit(shapeHeight, shapeWidth);
         for (let rowIndex = 0; rowIndex !== rotatedHeight; ++rowIndex) {
             for (let columnIndex = 0; columnIndex !== rotatedWidth; ++columnIndex) {
                 result[rowIndex][columnIndex] = shape[rotatedWidth - columnIndex - 1][rowIndex];
@@ -608,8 +608,8 @@ exports.rotateCW = ((width, height, createGrid) => {
         const rotatedWidth = shapeHeight;
         const rotatedHeight = shapeWidth;
         const result = [];
-        for (let rowIndex = 0; rowIndex !== rotatedHeight; ++rowIndex) {
-            result.push(nthColumn(shape, rowIndex));
+        for (let rowIndex = rotatedHeight - 1; rowIndex >= 0; --rowIndex) {
+            result.push(nthColumn(shape, rowIndex).reverse());
         }
         return result;
     };
