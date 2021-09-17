@@ -55,7 +55,7 @@ Indien er zich foutmeldingen voordoen bij de commitstap (`git commit`) betekent 
 
 Indien er fouten staan in het cursusmateriaal, kan je dit altijd melden als volgt:
 
-* Ga naar [de issues pagina van de oefeningenrepository](https://github.com/UCLeuvenLimburg/algoritmisch-denken-oefeningen/issues).
+* Ga naar [de issues pagina van de oefeningenrepository](https://github.com/ucll-algoritmisch-denken/exercises/issues).
 * Maak een nieuwe issue aan.
 * Vermeld in de titel om welk hoofdstuk en welke oefening het gaat.
 * Vul een korte omschrijving van de fout in.
