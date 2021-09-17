@@ -35,7 +35,7 @@ Enkel de regels die beginnen op `$` moet je zelf ingeven.
 **Merk op dat je de `$` zelf niet hoeft in te geven!**
 
 ```bash
-$ git clone URL .g
+$ git clone URL .
 Cloning into '.'...
 warning: You appear to have cloned an empty repository.
 
