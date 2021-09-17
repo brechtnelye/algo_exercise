@@ -20,8 +20,8 @@ Indien deze nog niet geïnstalleerd zijn, volg de instructies op [deze site](htt
 
 * Ga naar GitHub Classroom. De link vind je op Toledo.
 * Aanvaard de assignment.
-* Wacht tot GitHub klaar is met je repository te initialiseren. Mogelijk is een refresh (F5) nodig.
-* Noteer de getoonde URL. Deze is van de vorm `https://github.com/algoritmisch-denken-oefeningen-2122/algoritmisch-denken-oefeningen-LOGIN` waarbij LOGIN je GitHub-login is.
+* Wacht tot GitHub klaar is met je repository te initialiseren. Refresh na een 5-tal seconden.
+* Noteer de getoonde URL. Deze is van de vorm `https://github.com/algoritmisch-denken-oefeningen-2122/oefeningen-LOGIN` waarbij LOGIN je GitHub-login is.
 
 ## Downloaden Oefeningen
 
@@ -35,7 +35,7 @@ Enkel de regels die beginnen op `$` moet je zelf ingeven.
 **Merk op dat je de `$` zelf niet hoeft in te geven!**
 
 ```bash
-$ git clone URL .
+$ git clone URL .g
 Cloning into '.'...
 warning: You appear to have cloned an empty repository.
 
