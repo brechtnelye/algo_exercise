@@ -7,8 +7,9 @@ Voor dit vak heb je als software nodig:
 * Git
 * Chrome
 * Visual Studio Code (dit is *niet* hetzelfde als Visual Studio)
+* Je hebt tevens een GitHub account nodig.
 
-Indien deze nog niet geïnstalleerd zijn, volg de instructies op [deze site](https://ucleuvenlimburg.github.io/software/).
+Indien nodig kan je instructies vinden op [deze site](https://ucleuvenlimburg.github.io/software/).
 
 ## GitHub
 
