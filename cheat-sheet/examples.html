@@ -438,215 +438,80 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <style>
-pre.rouge table td { padding: 5px; }
-pre.rouge table pre { margin: 0; }
-pre.rouge .cm {
-  color: #999988;
-  font-style: italic;
-}
-pre.rouge .cp {
-  color: #999999;
-  font-weight: bold;
-}
-pre.rouge .c1 {
-  color: #999988;
-  font-style: italic;
-}
-pre.rouge .cs {
-  color: #999999;
-  font-weight: bold;
-  font-style: italic;
-}
-pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cpf {
-  color: #999988;
-  font-style: italic;
-}
-pre.rouge .err {
-  color: #a61717;
-  background-color: #e3d2d2;
-}
-pre.rouge .gd {
-  color: #000000;
-  background-color: #ffdddd;
-}
-pre.rouge .ge {
-  color: #000000;
-  font-style: italic;
-}
-pre.rouge .gr {
-  color: #aa0000;
-}
-pre.rouge .gh {
-  color: #999999;
-}
-pre.rouge .gi {
-  color: #000000;
-  background-color: #ddffdd;
-}
-pre.rouge .go {
-  color: #888888;
-}
-pre.rouge .gp {
-  color: #555555;
-}
-pre.rouge .gs {
-  font-weight: bold;
-}
-pre.rouge .gu {
-  color: #aaaaaa;
-}
-pre.rouge .gt {
-  color: #aa0000;
-}
-pre.rouge .kc {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kd {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kn {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kp {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kr {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kt {
-  color: #445588;
-  font-weight: bold;
-}
-pre.rouge .k, pre.rouge .kv {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .mf {
-  color: #009999;
-}
-pre.rouge .mh {
-  color: #009999;
-}
-pre.rouge .il {
-  color: #009999;
-}
-pre.rouge .mi {
-  color: #009999;
-}
-pre.rouge .mo {
-  color: #009999;
-}
-pre.rouge .m, pre.rouge .mb, pre.rouge .mx {
-  color: #009999;
-}
-pre.rouge .sb {
-  color: #d14;
-}
-pre.rouge .sc {
-  color: #d14;
-}
-pre.rouge .sd {
-  color: #d14;
-}
-pre.rouge .s2 {
-  color: #d14;
-}
-pre.rouge .se {
-  color: #d14;
-}
-pre.rouge .sh {
-  color: #d14;
-}
-pre.rouge .si {
-  color: #d14;
-}
-pre.rouge .sx {
-  color: #d14;
-}
-pre.rouge .sr {
-  color: #009926;
-}
-pre.rouge .s1 {
-  color: #d14;
-}
-pre.rouge .ss {
-  color: #990073;
-}
-pre.rouge .s, pre.rouge .sa, pre.rouge .dl {
-  color: #d14;
-}
-pre.rouge .na {
-  color: #008080;
-}
-pre.rouge .bp {
-  color: #999999;
-}
-pre.rouge .nb {
-  color: #0086B3;
-}
-pre.rouge .nc {
-  color: #445588;
-  font-weight: bold;
-}
-pre.rouge .no {
-  color: #008080;
-}
-pre.rouge .nd {
-  color: #3c5d5d;
-  font-weight: bold;
-}
-pre.rouge .ni {
-  color: #800080;
-}
-pre.rouge .ne {
-  color: #990000;
-  font-weight: bold;
-}
-pre.rouge .nf, pre.rouge .fm {
-  color: #990000;
-  font-weight: bold;
-}
-pre.rouge .nl {
-  color: #990000;
-  font-weight: bold;
-}
-pre.rouge .nn {
-  color: #555555;
-}
-pre.rouge .nt {
-  color: #000080;
-}
-pre.rouge .vc {
-  color: #008080;
-}
-pre.rouge .vg {
-  color: #008080;
-}
-pre.rouge .vi {
-  color: #008080;
-}
-pre.rouge .nv, pre.rouge .vm {
-  color: #008080;
-}
-pre.rouge .ow {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .o {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .w {
-  color: #bbbbbb;
-}
-pre.rouge {
-  background-color: #f8f8f8;
-}
+pre { line-height: 125%; }
+td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #f8f8f8; }
+pre.pygments .tok-c { color: #408080; font-style: italic } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
+pre.pygments .tok-o { color: #666666 } /* Operator */
+pre.pygments .tok-ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #408080; font-style: italic } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #BC7A00 } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #408080; font-style: italic } /* Comment.Single */
+pre.pygments .tok-cs { color: #408080; font-style: italic } /* Comment.Special */
+pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-gr { color: #FF0000 } /* Generic.Error */
+pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gi { color: #00A000 } /* Generic.Inserted */
+pre.pygments .tok-go { color: #888888 } /* Generic.Output */
+pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
+pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
+pre.pygments .tok-m { color: #666666 } /* Literal.Number */
+pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
+pre.pygments .tok-na { color: #7D9029 } /* Name.Attribute */
+pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
+pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
+pre.pygments .tok-no { color: #880000 } /* Name.Constant */
+pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
+pre.pygments .tok-ni { color: #999999; font-weight: bold } /* Name.Entity */
+pre.pygments .tok-ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
+pre.pygments .tok-nl { color: #A0A000 } /* Name.Label */
+pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
+pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
+pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
+pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
+pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
+pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
+pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
+pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
+pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #BB6688 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
+pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
+pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
+pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
+pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
+pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
+pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </style>
 </head>
 <body class="article toc2 toc-left">
@@ -662,6 +527,7 @@ pre.rouge {
 <li><a href="#array-filter">array.filter</a></li>
 <li><a href="#array-find">array.find</a></li>
 <li><a href="#array-map">array.map</a></li>
+<li><a href="#array-flatmap">array.flatMap</a></li>
 <li><a href="#object-lookup">Object Lookup</a></li>
 <li><a href="#object-lookup2">Object Lookup 2</a></li>
 <li><a href="#object-membership">Object Key Membership</a></li>
@@ -677,12 +543,12 @@ pre.rouge {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="kd">const</span> <span class="nx">xs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">xs</span> <span class="tok-o">=</span> <span class="tok-p">[</span><span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-mf">4</span><span class="tok-p">,</span> <span class="tok-mf">6</span><span class="tok-p">,</span> <span class="tok-mf">10</span><span class="tok-p">,</span> <span class="tok-mf">5</span><span class="tok-p">,</span> <span class="tok-mf">2</span><span class="tok-p">]</span>
 
-<span class="c1">// x - y is negatief indien x &lt; y en positief indien x &gt; y</span>
-<span class="nx">xs</span><span class="p">.</span><span class="nx">sort</span><span class="p">(</span> <span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">-</span> <span class="nx">y</span> <span class="p">);</span>
+<span class="tok-c1">// x - y is negatief indien x &lt; y en positief indien x &gt; y</span>
+<span class="tok-nx">xs</span><span class="tok-p">.</span><span class="tok-nx">sort</span><span class="tok-p">(</span> <span class="tok-p">(</span><span class="tok-nx">x</span><span class="tok-p">,</span> <span class="tok-nx">y</span><span class="tok-p">)</span> <span class="tok-p">=&gt;</span> <span class="tok-nx">x</span> <span class="tok-o">-</span> <span class="tok-nx">y</span> <span class="tok-p">);</span>
 
-<span class="c1">// xs == [1, 2, 4, 5, 6, 10]</span></code></pre>
+<span class="tok-c1">// xs == [1, 2, 4, 5, 6, 10]</span></code></pre>
 </div>
 </div>
 </div>
@@ -692,13 +558,13 @@ pre.rouge {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="kd">const</span> <span class="nx">xs</span> <span class="o">=</span> <span class="p">[</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">d</span><span class="dl">'</span><span class="p">];</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">xs</span> <span class="tok-o">=</span> <span class="tok-p">[</span><span class="tok-s1">&#39;a&#39;</span><span class="tok-p">,</span> <span class="tok-s1">&#39;b&#39;</span><span class="tok-p">,</span> <span class="tok-s1">&#39;c&#39;</span><span class="tok-p">,</span> <span class="tok-s1">&#39;d&#39;</span><span class="tok-p">];</span>
 
-<span class="nx">xs</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span> <span class="nx">x</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
-<span class="p">});</span>
+<span class="tok-nx">xs</span><span class="tok-p">.</span><span class="tok-nx">forEach</span><span class="tok-p">(</span> <span class="tok-nx">x</span> <span class="tok-p">=&gt;</span> <span class="tok-p">{</span>
+    <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-nx">x</span><span class="tok-p">);</span>
+<span class="tok-p">});</span>
 
-<span class="c1">// Print a b c d af</span></code></pre>
+<span class="tok-c1">// Print a b c d af</span></code></pre>
 </div>
 </div>
 </div>
@@ -708,13 +574,13 @@ pre.rouge {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="kd">const</span> <span class="nx">xs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">xs</span> <span class="tok-o">=</span> <span class="tok-p">[</span><span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-mf">2</span><span class="tok-p">,</span> <span class="tok-mf">3</span><span class="tok-p">,</span> <span class="tok-mf">4</span><span class="tok-p">,</span> <span class="tok-mf">5</span><span class="tok-p">];</span>
 
-<span class="c1">// Is elk getal in x positief?</span>
-<span class="k">if</span> <span class="p">(</span> <span class="nx">xs</span><span class="p">.</span><span class="nx">every</span><span class="p">(</span><span class="nx">x</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">)</span>
-<span class="p">{</span>
-    <span class="p">...</span>
-<span class="p">}</span></code></pre>
+<span class="tok-c1">// Is elk getal in x positief?</span>
+<span class="tok-k">if</span> <span class="tok-p">(</span> <span class="tok-nx">xs</span><span class="tok-p">.</span><span class="tok-nx">every</span><span class="tok-p">(</span><span class="tok-nx">x</span> <span class="tok-p">=&gt;</span> <span class="tok-nx">x</span> <span class="tok-o">&gt;</span> <span class="tok-mf">0</span><span class="tok-p">)</span> <span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-p">...</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 </div>
@@ -724,13 +590,13 @@ pre.rouge {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="kd">const</span> <span class="nx">xs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">xs</span> <span class="tok-o">=</span> <span class="tok-p">[</span><span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-mf">2</span><span class="tok-p">,</span> <span class="tok-mf">3</span><span class="tok-p">,</span> <span class="tok-mf">4</span><span class="tok-p">,</span> <span class="tok-mf">5</span><span class="tok-p">];</span>
 
-<span class="c1">// Bevat xs een positief getal?</span>
-<span class="k">if</span> <span class="p">(</span> <span class="nx">xs</span><span class="p">.</span><span class="nx">any</span><span class="p">(</span><span class="nx">x</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">)</span>
-<span class="p">{</span>
-    <span class="p">...</span>
-<span class="p">}</span></code></pre>
+<span class="tok-c1">// Bevat xs een positief getal?</span>
+<span class="tok-k">if</span> <span class="tok-p">(</span> <span class="tok-nx">xs</span><span class="tok-p">.</span><span class="tok-nx">any</span><span class="tok-p">(</span><span class="tok-nx">x</span> <span class="tok-p">=&gt;</span> <span class="tok-nx">x</span> <span class="tok-o">&gt;</span> <span class="tok-mf">0</span><span class="tok-p">)</span> <span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-p">...</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 </div>
@@ -740,11 +606,11 @@ pre.rouge {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="kd">const</span> <span class="nx">xs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
-<span class="kd">const</span> <span class="nx">onlyPositive</span> <span class="o">=</span> <span class="nx">xs</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">x</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">);</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">xs</span> <span class="tok-o">=</span> <span class="tok-p">[</span><span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-o">-</span><span class="tok-mf">2</span><span class="tok-p">,</span> <span class="tok-mf">3</span><span class="tok-p">,</span> <span class="tok-o">-</span><span class="tok-mf">4</span><span class="tok-p">,</span> <span class="tok-mf">5</span><span class="tok-p">];</span>
+<span class="tok-kr">const</span> <span class="tok-nx">onlyPositive</span> <span class="tok-o">=</span> <span class="tok-nx">xs</span><span class="tok-p">.</span><span class="tok-nx">filter</span><span class="tok-p">(</span><span class="tok-nx">x</span> <span class="tok-p">=&gt;</span> <span class="tok-nx">x</span> <span class="tok-o">&gt;</span> <span class="tok-mf">0</span><span class="tok-p">);</span>
 
-<span class="c1">// xs == [1, -2, 3, -4, 5]</span>
-<span class="c1">// onlyPositive == [1, 3, 5]</span></code></pre>
+<span class="tok-c1">// xs == [1, -2, 3, -4, 5]</span>
+<span class="tok-c1">// onlyPositive == [1, 3, 5]</span></code></pre>
 </div>
 </div>
 </div>
@@ -754,10 +620,10 @@ pre.rouge {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="kd">const</span> <span class="nx">xs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">];</span>
-<span class="kd">const</span> <span class="nx">firstHigherThanFive</span> <span class="o">=</span> <span class="nx">xs</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">x</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">);</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">xs</span> <span class="tok-o">=</span> <span class="tok-p">[</span><span class="tok-mf">3</span><span class="tok-p">,</span> <span class="tok-mf">4</span><span class="tok-p">,</span> <span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-mf">5</span><span class="tok-p">,</span> <span class="tok-mf">2</span><span class="tok-p">,</span> <span class="tok-mf">7</span><span class="tok-p">,</span> <span class="tok-mf">6</span><span class="tok-p">,</span> <span class="tok-mf">8</span><span class="tok-p">];</span>
+<span class="tok-kr">const</span> <span class="tok-nx">firstHigherThanFive</span> <span class="tok-o">=</span> <span class="tok-nx">xs</span><span class="tok-p">.</span><span class="tok-nx">find</span><span class="tok-p">(</span><span class="tok-nx">x</span> <span class="tok-p">=&gt;</span> <span class="tok-nx">x</span> <span class="tok-o">&gt;</span> <span class="tok-mf">5</span><span class="tok-p">);</span>
 
-<span class="c1">// firstHigherThanFive == 7</span></code></pre>
+<span class="tok-c1">// firstHigherThanFive == 7</span></code></pre>
 </div>
 </div>
 </div>
@@ -767,10 +633,25 @@ pre.rouge {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="kd">const</span> <span class="nx">xs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
-<span class="kd">const</span> <span class="nx">doubles</span> <span class="o">=</span> <span class="nx">xs</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">x</span> <span class="o">=&gt;</span> <span class="nx">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">);</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">xs</span> <span class="tok-o">=</span> <span class="tok-p">[</span><span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-mf">2</span><span class="tok-p">,</span> <span class="tok-mf">3</span><span class="tok-p">,</span> <span class="tok-mf">4</span><span class="tok-p">]</span>
+<span class="tok-kr">const</span> <span class="tok-nx">doubles</span> <span class="tok-o">=</span> <span class="tok-nx">xs</span><span class="tok-p">.</span><span class="tok-nx">map</span><span class="tok-p">(</span><span class="tok-nx">x</span> <span class="tok-p">=&gt;</span> <span class="tok-nx">x</span> <span class="tok-o">*</span> <span class="tok-mf">2</span><span class="tok-p">);</span>
 
-<span class="c1">// doubles == [2, 4, 6, 8]</span></code></pre>
+<span class="tok-c1">// doubles == [2, 4, 6, 8]</span></code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="array-flatmap">array.flatMap</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">xs</span> <span class="tok-o">=</span> <span class="tok-p">[</span><span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-mf">2</span><span class="tok-p">,</span> <span class="tok-mf">3</span><span class="tok-p">,</span> <span class="tok-mf">4</span><span class="tok-p">]</span>
+<span class="tok-kr">const</span> <span class="tok-nx">duplicated1</span> <span class="tok-o">=</span> <span class="tok-nx">xs</span><span class="tok-p">.</span><span class="tok-nx">map</span><span class="tok-p">(</span><span class="tok-nx">x</span> <span class="tok-p">=&gt;</span> <span class="tok-p">[</span><span class="tok-nx">x</span><span class="tok-p">,</span> <span class="tok-nx">x</span><span class="tok-p">]);</span>
+<span class="tok-kr">const</span> <span class="tok-nx">duplicated2</span> <span class="tok-o">=</span> <span class="tok-nx">xs</span><span class="tok-p">.</span><span class="tok-nx">flatMap</span><span class="tok-p">(</span><span class="tok-nx">x</span> <span class="tok-p">=&gt;</span> <span class="tok-p">[</span><span class="tok-nx">x</span><span class="tok-p">,</span> <span class="tok-nx">x</span><span class="tok-p">]);</span>
+
+<span class="tok-c1">// duplicated1 == [[1, 1], [2, 2], [3, 3], [4, 4]]</span>
+<span class="tok-c1">// duplicated2 == [1, 1, 2, 2, 3, 3, 4, 4]</span></code></pre>
 </div>
 </div>
 </div>
@@ -780,11 +661,11 @@ pre.rouge {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="kd">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">};</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">obj</span> <span class="tok-o">=</span> <span class="tok-p">{</span> <span class="tok-nx">a</span><span class="tok-o">:</span> <span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-nx">b</span><span class="tok-o">:</span> <span class="tok-mf">2</span><span class="tok-p">,</span> <span class="tok-nx">c</span><span class="tok-o">:</span> <span class="tok-mf">3</span> <span class="tok-p">};</span>
 
-<span class="nx">obj</span><span class="p">.</span><span class="nx">a</span><span class="p">;</span> <span class="c1">// 1</span>
-<span class="nx">obj</span><span class="p">.</span><span class="nx">b</span><span class="p">;</span> <span class="c1">// 2</span>
-<span class="nx">obj</span><span class="p">.</span><span class="nx">c</span><span class="p">;</span> <span class="c1">// 3</span></code></pre>
+<span class="tok-nx">obj</span><span class="tok-p">.</span><span class="tok-nx">a</span><span class="tok-p">;</span> <span class="tok-c1">// 1</span>
+<span class="tok-nx">obj</span><span class="tok-p">.</span><span class="tok-nx">b</span><span class="tok-p">;</span> <span class="tok-c1">// 2</span>
+<span class="tok-nx">obj</span><span class="tok-p">.</span><span class="tok-nx">c</span><span class="tok-p">;</span> <span class="tok-c1">// 3</span></code></pre>
 </div>
 </div>
 </div>
@@ -794,20 +675,20 @@ pre.rouge {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="kd">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">};</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">obj</span> <span class="tok-o">=</span> <span class="tok-p">{</span> <span class="tok-nx">a</span><span class="tok-o">:</span> <span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-nx">b</span><span class="tok-o">:</span> <span class="tok-mf">2</span><span class="tok-p">,</span> <span class="tok-nx">c</span><span class="tok-o">:</span> <span class="tok-mf">3</span> <span class="tok-p">};</span>
 
-<span class="nx">obj</span><span class="p">[</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">];</span> <span class="c1">// 1</span>
-<span class="nx">obj</span><span class="p">[</span><span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">];</span> <span class="c1">// 2</span>
-<span class="nx">obj</span><span class="p">[</span><span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">];</span> <span class="c1">// 3</span>
+<span class="tok-nx">obj</span><span class="tok-p">[</span><span class="tok-s1">&#39;a&#39;</span><span class="tok-p">];</span> <span class="tok-c1">// 1</span>
+<span class="tok-nx">obj</span><span class="tok-p">[</span><span class="tok-s1">&#39;b&#39;</span><span class="tok-p">];</span> <span class="tok-c1">// 2</span>
+<span class="tok-nx">obj</span><span class="tok-p">[</span><span class="tok-s1">&#39;c&#39;</span><span class="tok-p">];</span> <span class="tok-c1">// 3</span>
 
-<span class="nx">x</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">;</span>
-<span class="nx">obj</span><span class="p">[</span><span class="nx">x</span><span class="p">];</span> <span class="c1">// 1</span>
+<span class="tok-nx">x</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;a&#39;</span><span class="tok-p">;</span>
+<span class="tok-nx">obj</span><span class="tok-p">[</span><span class="tok-nx">x</span><span class="tok-p">];</span> <span class="tok-c1">// 1</span>
 
-<span class="nx">x</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">b</span><span class="dl">'</span><span class="p">;</span>
-<span class="nx">obj</span><span class="p">[</span><span class="nx">x</span><span class="p">];</span> <span class="c1">// 2</span>
+<span class="tok-nx">x</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;b&#39;</span><span class="tok-p">;</span>
+<span class="tok-nx">obj</span><span class="tok-p">[</span><span class="tok-nx">x</span><span class="tok-p">];</span> <span class="tok-c1">// 2</span>
 
-<span class="nx">x</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">c</span><span class="dl">'</span><span class="p">;</span>
-<span class="nx">obj</span><span class="p">[</span><span class="nx">x</span><span class="p">];</span> <span class="c1">// 3</span></code></pre>
+<span class="tok-nx">x</span> <span class="tok-o">=</span> <span class="tok-s1">&#39;c&#39;</span><span class="tok-p">;</span>
+<span class="tok-nx">obj</span><span class="tok-p">[</span><span class="tok-nx">x</span><span class="tok-p">];</span> <span class="tok-c1">// 3</span></code></pre>
 </div>
 </div>
 </div>
@@ -817,15 +698,15 @@ pre.rouge {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="kd">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">};</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">obj</span> <span class="tok-o">=</span> <span class="tok-p">{</span> <span class="tok-nx">a</span><span class="tok-o">:</span> <span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-nx">b</span><span class="tok-o">:</span> <span class="tok-mf">2</span><span class="tok-p">,</span> <span class="tok-nx">c</span><span class="tok-o">:</span> <span class="tok-mf">3</span> <span class="tok-p">};</span>
 
-<span class="dl">'</span><span class="s1">a</span><span class="dl">'</span> <span class="k">in</span> <span class="nx">obj</span>   <span class="c1">// true</span>
-<span class="dl">'</span><span class="s1">b</span><span class="dl">'</span> <span class="k">in</span> <span class="nx">obj</span>   <span class="c1">// true</span>
-<span class="dl">'</span><span class="s1">c</span><span class="dl">'</span> <span class="k">in</span> <span class="nx">obj</span>   <span class="c1">// true</span>
-<span class="dl">'</span><span class="s1">x</span><span class="dl">'</span> <span class="k">in</span> <span class="nx">obj</span>   <span class="c1">// false</span>
- <span class="mi">1</span>  <span class="k">in</span> <span class="nx">obj</span>   <span class="c1">// false</span>
- <span class="mi">2</span>  <span class="k">in</span> <span class="nx">obj</span>   <span class="c1">// false</span>
- <span class="mi">3</span>  <span class="k">in</span> <span class="nx">obj</span>   <span class="c1">// false</span></code></pre>
+<span class="tok-s1">&#39;a&#39;</span> <span class="tok-k">in</span> <span class="tok-nx">obj</span>   <span class="tok-c1">// true</span>
+<span class="tok-s1">&#39;b&#39;</span> <span class="tok-k">in</span> <span class="tok-nx">obj</span>   <span class="tok-c1">// true</span>
+<span class="tok-s1">&#39;c&#39;</span> <span class="tok-k">in</span> <span class="tok-nx">obj</span>   <span class="tok-c1">// true</span>
+<span class="tok-s1">&#39;x&#39;</span> <span class="tok-k">in</span> <span class="tok-nx">obj</span>   <span class="tok-c1">// false</span>
+ <span class="tok-mf">1</span>  <span class="tok-k">in</span> <span class="tok-nx">obj</span>   <span class="tok-c1">// false</span>
+ <span class="tok-mf">2</span>  <span class="tok-k">in</span> <span class="tok-nx">obj</span>   <span class="tok-c1">// false</span>
+ <span class="tok-mf">3</span>  <span class="tok-k">in</span> <span class="tok-nx">obj</span>   <span class="tok-c1">// false</span></code></pre>
 </div>
 </div>
 </div>
@@ -835,9 +716,9 @@ pre.rouge {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="kd">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">};</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">obj</span> <span class="tok-o">=</span> <span class="tok-p">{</span> <span class="tok-nx">a</span><span class="tok-o">:</span> <span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-nx">b</span><span class="tok-o">:</span> <span class="tok-mf">2</span><span class="tok-p">,</span> <span class="tok-nx">c</span><span class="tok-o">:</span> <span class="tok-mf">3</span> <span class="tok-p">};</span>
 
-<span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="c1">// [ 'a', 'b', 'c' ]</span></code></pre>
+<span class="tok-nb">Object</span><span class="tok-p">.</span><span class="tok-nx">keys</span><span class="tok-p">(</span><span class="tok-nx">obj</span><span class="tok-p">)</span> <span class="tok-c1">// [ &#39;a&#39;, &#39;b&#39;, &#39;c&#39; ]</span></code></pre>
 </div>
 </div>
 </div>
@@ -847,9 +728,9 @@ pre.rouge {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="kd">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">};</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">obj</span> <span class="tok-o">=</span> <span class="tok-p">{</span> <span class="tok-nx">a</span><span class="tok-o">:</span> <span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-nx">b</span><span class="tok-o">:</span> <span class="tok-mf">2</span><span class="tok-p">,</span> <span class="tok-nx">c</span><span class="tok-o">:</span> <span class="tok-mf">3</span> <span class="tok-p">};</span>
 
-<span class="nb">Object</span><span class="p">.</span><span class="nx">values</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="c1">// [ 1, 2, 3 ]</span></code></pre>
+<span class="tok-nb">Object</span><span class="tok-p">.</span><span class="tok-nx">values</span><span class="tok-p">(</span><span class="tok-nx">obj</span><span class="tok-p">)</span> <span class="tok-c1">// [ 1, 2, 3 ]</span></code></pre>
 </div>
 </div>
 </div>
@@ -859,13 +740,37 @@ pre.rouge {
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="kd">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span> <span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">c</span><span class="p">:</span> <span class="mi">3</span> <span class="p">};</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">obj</span> <span class="tok-o">=</span> <span class="tok-p">{</span> <span class="tok-nx">a</span><span class="tok-o">:</span> <span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-nx">b</span><span class="tok-o">:</span> <span class="tok-mf">2</span><span class="tok-p">,</span> <span class="tok-nx">c</span><span class="tok-o">:</span> <span class="tok-mf">3</span> <span class="tok-p">};</span>
 
-<span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">obj</span><span class="p">)</span> <span class="c1">// [ ['a', 1], ['b', 2], ['c', 3] ]</span></code></pre>
+<span class="tok-nb">Object</span><span class="tok-p">.</span><span class="tok-nx">entries</span><span class="tok-p">(</span><span class="tok-nx">obj</span><span class="tok-p">)</span> <span class="tok-c1">// [ [&#39;a&#39;, 1], [&#39;b&#39;, 2], [&#39;c&#39;, 3] ]</span></code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
 </body>
 </html>

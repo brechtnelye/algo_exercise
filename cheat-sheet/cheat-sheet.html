@@ -438,215 +438,80 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <style>
-pre.rouge table td { padding: 5px; }
-pre.rouge table pre { margin: 0; }
-pre.rouge .cm {
-  color: #999988;
-  font-style: italic;
-}
-pre.rouge .cp {
-  color: #999999;
-  font-weight: bold;
-}
-pre.rouge .c1 {
-  color: #999988;
-  font-style: italic;
-}
-pre.rouge .cs {
-  color: #999999;
-  font-weight: bold;
-  font-style: italic;
-}
-pre.rouge .c, pre.rouge .ch, pre.rouge .cd, pre.rouge .cpf {
-  color: #999988;
-  font-style: italic;
-}
-pre.rouge .err {
-  color: #a61717;
-  background-color: #e3d2d2;
-}
-pre.rouge .gd {
-  color: #000000;
-  background-color: #ffdddd;
-}
-pre.rouge .ge {
-  color: #000000;
-  font-style: italic;
-}
-pre.rouge .gr {
-  color: #aa0000;
-}
-pre.rouge .gh {
-  color: #999999;
-}
-pre.rouge .gi {
-  color: #000000;
-  background-color: #ddffdd;
-}
-pre.rouge .go {
-  color: #888888;
-}
-pre.rouge .gp {
-  color: #555555;
-}
-pre.rouge .gs {
-  font-weight: bold;
-}
-pre.rouge .gu {
-  color: #aaaaaa;
-}
-pre.rouge .gt {
-  color: #aa0000;
-}
-pre.rouge .kc {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kd {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kn {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kp {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kr {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .kt {
-  color: #445588;
-  font-weight: bold;
-}
-pre.rouge .k, pre.rouge .kv {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .mf {
-  color: #009999;
-}
-pre.rouge .mh {
-  color: #009999;
-}
-pre.rouge .il {
-  color: #009999;
-}
-pre.rouge .mi {
-  color: #009999;
-}
-pre.rouge .mo {
-  color: #009999;
-}
-pre.rouge .m, pre.rouge .mb, pre.rouge .mx {
-  color: #009999;
-}
-pre.rouge .sb {
-  color: #d14;
-}
-pre.rouge .sc {
-  color: #d14;
-}
-pre.rouge .sd {
-  color: #d14;
-}
-pre.rouge .s2 {
-  color: #d14;
-}
-pre.rouge .se {
-  color: #d14;
-}
-pre.rouge .sh {
-  color: #d14;
-}
-pre.rouge .si {
-  color: #d14;
-}
-pre.rouge .sx {
-  color: #d14;
-}
-pre.rouge .sr {
-  color: #009926;
-}
-pre.rouge .s1 {
-  color: #d14;
-}
-pre.rouge .ss {
-  color: #990073;
-}
-pre.rouge .s, pre.rouge .sa, pre.rouge .dl {
-  color: #d14;
-}
-pre.rouge .na {
-  color: #008080;
-}
-pre.rouge .bp {
-  color: #999999;
-}
-pre.rouge .nb {
-  color: #0086B3;
-}
-pre.rouge .nc {
-  color: #445588;
-  font-weight: bold;
-}
-pre.rouge .no {
-  color: #008080;
-}
-pre.rouge .nd {
-  color: #3c5d5d;
-  font-weight: bold;
-}
-pre.rouge .ni {
-  color: #800080;
-}
-pre.rouge .ne {
-  color: #990000;
-  font-weight: bold;
-}
-pre.rouge .nf, pre.rouge .fm {
-  color: #990000;
-  font-weight: bold;
-}
-pre.rouge .nl {
-  color: #990000;
-  font-weight: bold;
-}
-pre.rouge .nn {
-  color: #555555;
-}
-pre.rouge .nt {
-  color: #000080;
-}
-pre.rouge .vc {
-  color: #008080;
-}
-pre.rouge .vg {
-  color: #008080;
-}
-pre.rouge .vi {
-  color: #008080;
-}
-pre.rouge .nv, pre.rouge .vm {
-  color: #008080;
-}
-pre.rouge .ow {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .o {
-  color: #000000;
-  font-weight: bold;
-}
-pre.rouge .w {
-  color: #bbbbbb;
-}
-pre.rouge {
-  background-color: #f8f8f8;
-}
+pre { line-height: 125%; }
+td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
+td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+pre.pygments .hll { background-color: #ffffcc }
+pre.pygments { background: #f8f8f8; }
+pre.pygments .tok-c { color: #408080; font-style: italic } /* Comment */
+pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
+pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
+pre.pygments .tok-o { color: #666666 } /* Operator */
+pre.pygments .tok-ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+pre.pygments .tok-cm { color: #408080; font-style: italic } /* Comment.Multiline */
+pre.pygments .tok-cp { color: #BC7A00 } /* Comment.Preproc */
+pre.pygments .tok-cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+pre.pygments .tok-c1 { color: #408080; font-style: italic } /* Comment.Single */
+pre.pygments .tok-cs { color: #408080; font-style: italic } /* Comment.Special */
+pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
+pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
+pre.pygments .tok-gr { color: #FF0000 } /* Generic.Error */
+pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre.pygments .tok-gi { color: #00A000 } /* Generic.Inserted */
+pre.pygments .tok-go { color: #888888 } /* Generic.Output */
+pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
+pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
+pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
+pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
+pre.pygments .tok-m { color: #666666 } /* Literal.Number */
+pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
+pre.pygments .tok-na { color: #7D9029 } /* Name.Attribute */
+pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
+pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
+pre.pygments .tok-no { color: #880000 } /* Name.Constant */
+pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
+pre.pygments .tok-ni { color: #999999; font-weight: bold } /* Name.Entity */
+pre.pygments .tok-ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
+pre.pygments .tok-nl { color: #A0A000 } /* Name.Label */
+pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
+pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
+pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
+pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
+pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
+pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
+pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
+pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
+pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
+pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
+pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
+pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
+pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
+pre.pygments .tok-se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
+pre.pygments .tok-si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
+pre.pygments .tok-sr { color: #BB6688 } /* Literal.String.Regex */
+pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
+pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
+pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
+pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
+pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
+pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
+pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
+pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
+pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 </style>
 </head>
 <body class="article toc2 toc-left">
@@ -655,17 +520,13 @@ pre.rouge {
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_statements">Statements</a>
+<li><a href="#_control_flow">Control Flow</a>
 <ul class="sectlevel2">
-<li><a href="#_if"><code>if</code></a></li>
-<li><a href="#_lussen">Lussen</a>
-<ul class="sectlevel3">
-<li><a href="#_while"><code>while</code></a></li>
-<li><a href="#_for"><code>for</code></a></li>
-<li><a href="#_for_in_object"><code>for in object</code></a></li>
-<li><a href="#_for_of_array"><code>for of array</code></a></li>
-</ul>
-</li>
+<li><a href="#_if">if</a></li>
+<li><a href="#_while">while</a></li>
+<li><a href="#_for">for</a></li>
+<li><a href="#_for_in">for in</a></li>
+<li><a href="#_for_of">for of</a></li>
 </ul>
 </li>
 <li><a href="#_wiskundige_bewerkingen">Wiskundige Bewerkingen</a>
@@ -674,11 +535,7 @@ pre.rouge {
 <li><a href="#_math"><code>Math</code></a></li>
 </ul>
 </li>
-<li><a href="#_logische_operatoren">Logische Operatoren</a>
-<ul class="sectlevel2">
-<li><a href="#_waarheidstabellen">Waarheidstabellen</a></li>
-</ul>
-</li>
+<li><a href="#_logische_operatoren">Logische Operatoren</a></li>
 <li><a href="#_stringoperaties">Stringoperaties</a></li>
 <li><a href="#_arrayoperaties">Arrayoperaties</a>
 <ul class="sectlevel2">
@@ -691,88 +548,123 @@ pre.rouge {
 </div>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<div class="title">⚠️</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Merk op dat veel links verwijzen naar <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>, hetgeen niet beschikbaar is tijdens examens wegens gebrek aan een internetconnectie.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
 <div class="sect1">
-<h2 id="_statements">Statements</h2>
+<h2 id="_control_flow">Control Flow</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_if"><code>if</code></h3>
+<h3 id="_if">if</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="k">if</span> <span class="p">(</span> <span class="nx">conditie</span> <span class="p">)</span>
-<span class="p">{</span>
-    <span class="c1">// Indien conditie waar</span>
-<span class="p">}</span>
-<span class="k">else</span>
-<span class="p">{</span>
-    <span class="c1">// Indien conditie vals</span>
-<span class="p">}</span></code></pre>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-k">if</span> <span class="tok-p">(</span> <span class="tok-nx">conditie</span> <span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-c1">// Indien conditie waar</span>
+<span class="tok-p">}</span>
+<span class="tok-k">else</span>
+<span class="tok-p">{</span>
+    <span class="tok-c1">// Indien conditie vals</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_lussen">Lussen</h3>
-<div class="sect3">
-<h4 id="_while"><code>while</code></h4>
+<h3 id="_while">while</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="k">while</span> <span class="p">(</span> <span class="nx">conditie</span> <span class="p">)</span>
-<span class="p">{</span>
-    <span class="c1">// Herhaald zolang conditie waar is</span>
-<span class="p">}</span></code></pre>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-k">while</span> <span class="tok-p">(</span> <span class="tok-nx">conditie</span> <span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-cm">/* Code die herhaald wordt zolang conditie waar is */</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_for"><code>for</code></h4>
+<div class="sect2">
+<h3 id="_for">for</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="k">for</span> <span class="p">(</span> <span class="nx">init</span><span class="p">;</span> <span class="nx">conditie</span><span class="p">;</span> <span class="nx">update</span> <span class="p">)</span>
-<span class="p">{</span>
-    <span class="c1">// Herhaald zolang conditie waar is</span>
-<span class="p">}</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-k">for</span> <span class="tok-p">(</span> <span class="tok-nx">init</span><span class="tok-p">;</span> <span class="tok-nx">conditie</span><span class="tok-p">;</span> <span class="tok-nx">update</span> <span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-cm">/* Code die herhaald wordt zolang conditie waar is */</span>
+<span class="tok-p">}</span>
 
-<span class="c1">// is equivalent met</span>
+<span class="tok-c1">// is equivalent met</span>
 
-<span class="nx">init</span><span class="p">;</span>
+<span class="tok-nx">init</span><span class="tok-p">;</span>
+<span class="tok-k">while</span> <span class="tok-p">(</span> <span class="tok-nx">conditie</span> <span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-cm">/* Code die herhaald wordt zolang conditie waar is */</span>
 
-<span class="k">while</span> <span class="p">(</span> <span class="nx">conditie</span> <span class="p">)</span>
-<span class="p">{</span>
-    <span class="c1">// Herhaald zolang conditie waar is</span>
-
-    <span class="nx">update</span><span class="p">;</span>
-<span class="p">}</span></code></pre>
+    <span class="tok-nx">update</span><span class="tok-p">;</span>
+<span class="tok-p">}</span></code></pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_for_in_object"><code>for in object</code></h4>
+<div class="sect2">
+<h3 id="_for_in">for in</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="k">for</span> <span class="p">(</span> <span class="kd">const</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">object</span> <span class="p">)</span>
-<span class="p">{</span>
-    <span class="c1">// i gaat de **keys** af van object</span>
-<span class="p">}</span></code></pre>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">object</span> <span class="tok-o">=</span> <span class="tok-p">{</span> <span class="tok-nx">a</span><span class="tok-o">:</span> <span class="tok-mf">1</span><span class="tok-p">,</span> <span class="tok-nx">b</span><span class="tok-o">:</span> <span class="tok-mf">2</span><span class="tok-p">,</span> <span class="tok-nx">c</span><span class="tok-o">:</span> <span class="tok-mf">3</span> <span class="tok-p">};</span>
+
+<span class="tok-k">for</span> <span class="tok-p">(</span> <span class="tok-kr">const</span> <span class="tok-nx">key</span> <span class="tok-k">in</span> <span class="tok-nx">object</span> <span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-c1">// i gaat de **keys** af van object</span>
+    <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-nx">key</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
+
+<span class="tok-c1">// Output:</span>
+<span class="tok-c1">//   a</span>
+<span class="tok-c1">//   b</span>
+<span class="tok-c1">//   c</span></code></pre>
 </div>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<div class="title">⚠️</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Gebruik de <code>for in</code> lus niet op arrays.
+Vermoedelijk doet dat niet wat je wil!</p>
 </div>
-<div class="sect3">
-<h4 id="_for_of_array"><code>for of array</code></h4>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_for_of">for of</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="rouge highlight"><code data-lang="javascript"><span class="k">for</span> <span class="p">(</span> <span class="kd">const</span> <span class="nx">x</span> <span class="k">of</span> <span class="nx">array</span> <span class="p">)</span>
-<span class="p">{</span>
-    <span class="c1">// i gaat de **waarden** af van array</span>
-<span class="p">}</span>
+<pre class="pygments highlight"><code data-lang="javascript"><span></span><span class="tok-kr">const</span> <span class="tok-nx">array</span> <span class="tok-o">=</span> <span class="tok-p">[</span><span class="tok-s1">&#39;a&#39;</span><span class="tok-p">,</span> <span class="tok-s1">&#39;b&#39;</span><span class="tok-p">,</span> <span class="tok-s1">&#39;c&#39;</span><span class="tok-p">];</span>
+<span class="tok-k">for</span> <span class="tok-p">(</span> <span class="tok-kr">const</span> <span class="tok-nx">x</span> <span class="tok-k">of</span> <span class="tok-nx">array</span> <span class="tok-p">)</span>
+<span class="tok-p">{</span>
+    <span class="tok-c1">// x gaat de **waarden** af van array</span>
+    <span class="tok-nx">console</span><span class="tok-p">.</span><span class="tok-nx">log</span><span class="tok-p">(</span><span class="tok-nx">x</span><span class="tok-p">);</span>
+<span class="tok-p">}</span>
 
-<span class="c1">// is equivalent met</span>
-
-<span class="k">for</span> <span class="p">(</span> <span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">!==</span> <span class="nx">array</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="o">++</span><span class="nx">i</span> <span class="p">)</span>
-<span class="p">{</span>
-    <span class="kd">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">array</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-
-    <span class="c1">// ...</span>
-<span class="p">}</span></code></pre>
-</div>
+<span class="tok-c1">// Output:</span>
+<span class="tok-c1">//   a</span>
+<span class="tok-c1">//   b</span>
+<span class="tok-c1">//   c</span></code></pre>
 </div>
 </div>
 </div>
@@ -898,8 +790,9 @@ pre.rouge {
 </tr>
 </tbody>
 </table>
-<div class="sect2">
-<h3 id="_waarheidstabellen">Waarheidstabellen</h3>
+<details>
+<summary class="title">Waarheidstabellen</summary>
+<div class="content">
 <table class="tableblock frame-all grid-all center" style="width: 40%;">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -995,6 +888,7 @@ pre.rouge {
 </tbody>
 </table>
 </div>
+</details>
 </div>
 </div>
 <div class="sect1">
@@ -1089,7 +983,7 @@ pre.rouge {
 <td class="tableblock halign-center valign-top"><p class="tableblock">Verwijder whitespace aan einde</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals">` <code>abc ${x} xyz</code> `</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals"><code>`abc ${x} xyz`</code></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Stringinterpolatie</p></td>
 </tr>
 </tbody>
@@ -1162,8 +1056,20 @@ pre.rouge {
 <td class="tableblock halign-center valign-top"><p class="tableblock">Index van eerste voorkomen van <code>y</code> in <code>xs</code></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join"><code>xs.join(sep)</code></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Voegt elementen samen tot een string</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"><code>xs.lastIndexOf(y)</code></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Index van laatste voorkomen van <code>y</code> in <code>xs</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat"><code>xs.flat()</code></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Zet array van arrays om naar array</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"><code>xs.slice(from, to)</code></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Kopieert elementen van <code>from</code> tot <code>to</code> naar nieuwe array</p></td>
 </tr>
 </tbody>
 </table>
@@ -1215,9 +1121,19 @@ pre.rouge {
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="examples.html#array-find">voorbeeld</a></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex"><code>xs.findIndex(f)</code></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Index van eerste element <code>x</code> waarvoor <code>f(x)</code> <code>true</code> oplevert</p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"><code>xs.map(f)</code></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Reken <code>f(x)</code> uit voor elk element en verzamel resultaten</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="examples.html#array-map">voorbeeld</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap"><code>xs.flatMap(f)</code></a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Map gevolgd door <code>flat</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="examples.html#array-flatmap">voorbeeld</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -1267,17 +1183,17 @@ pre.rouge {
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="examples.html#object-membership">voorbeeld</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><code>Object.keys(obj)</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys"><code>Object.keys(obj)</code></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Array van keys van <code>obj</code></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="examples.html#object-keys">voorbeeld</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><code>Object.values(obj)</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values"><code>Object.values(obj)</code></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Array van values van <code>obj</code></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="examples.html#object-values">voorbeeld</a></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-center valign-top"><p class="tableblock"><code>Object.entries(obj)</code></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries"><code>Object.entries(obj)</code></a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Array van <code>[key, value]</code> koppels</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><a href="examples.html#object-entries">voorbeeld</a></p></td>
 </tr>
@@ -1286,5 +1202,29 @@ pre.rouge {
 </div>
 </div>
 </div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
 </body>
 </html>
