@@ -103,3 +103,142 @@ function left(car) {
     turnLeft(car);
     forward(car);
 }
+
+function slalom(car) {
+    forwardUntilWall(car);
+    turnLeft(car);
+    forwardUntilWall(car);
+    turnRight(car);
+    forwardUntilWall(car);
+    turnRight(car);
+    forwardUntilWall(car);
+    turnLeft(car);
+    forwardUntilWall(car);
+    turnLeft(car);
+    forwardUntilWall(car);
+    turnRight(car);
+    forwardUntilWall(car);
+    turnRight(car);
+    forwardUntilWall(car);
+}
+
+function leftOrRight(car) {
+    turnLeft(car);
+    forwardUntilWall(car);
+    turnRight(car);
+    forwardUntilWall(car);
+    turnRight(car);
+    forwardUntilWall(car);
+    turnLeft(car);
+    forwardUntilWall(car);
+}
+
+function incompleteU(car) {
+    
+    forwardUntilWall(car);
+    turnRight(car);
+    forwardUntilWall(car);
+    turnRight(car);
+    forwardUntilWall(car);
+}
+
+function whichDirection(car) {
+    while(sensor(car)) {
+        turnRight(car);
+    }
+    forwardUntilWall(car);
+}
+
+function sensorRight(car) {
+    turnRight(car)
+    let result = sensor(car);
+    turnLeft(car);
+
+    return result;
+}
+
+function firstRight(car) {
+    forwardUntilFreeRight(car)
+    turnRight(car);
+    forwardUntilWall(car);
+}
+
+function sensorLeft(car) {
+    turnLeft(car);
+    let result = sensor(car);
+    turnRight(car);
+
+    return result;
+}
+
+function firstLeft(car) {
+    forwardUntilFreeLeft(car)
+    turnLeft(car);  
+    forwardUntilWall(car);
+}
+
+function zigZag(car) {
+    firstRight(car);
+    turnLeft(car);
+    forward(car);
+    firstLeft(car);       // Start at beginning of path.  Turn right until wall.  Forward until wall.  Turn left until wall.  Forward until wall.  Turn right until wall.  Forward until wall.  Turn left until wall.  Forward until wall.  Turn right until wall.  Forward until wall.  Turn right until wall.  Forward until wall.  Turn left until wall.  Forward until wall.  Turn right until wall.  Forward until wall.  Turn right until wall.  Forward until wall.  Turn left until wall.  Forward until wall.  Turn right unti
+}
+
+function forwardUntilFreeRight(car) {
+    while(sensorRight(car)) {
+        forward(car);
+    }
+}
+
+function forwardUntilFreeLeft(car) {
+    while(sensorLeft(car)) {
+        forward(car);
+    }
+}
+
+function secondRight(car) {
+    forwardUntilFreeRight(car);
+    forward(car);
+    firstRight(car);
+}
+
+function thirdRight(car) {
+    forwardUntilFreeRight(car);
+    forward(car);
+    secondRight(car);
+}
+
+function forwardUntillNthRight(car, nrights) { 
+    let i = nrights;
+
+    while(i > 0) {
+        forward(car);
+        if (!sensorRight(car)) {
+            i--;
+        }
+    }
+}
+
+function forwardUntillNthLeft(car, nlefts) { 
+    let i = nlefts;
+
+    while(i > 0) {
+        forward(car);
+        if (!sensorLeft(car)) {
+            i--;
+        }
+    }
+}
+
+
+
+function fourthRight(car) {
+    forwardUntillNthRight(car, 4);
+    firstRight(car);
+}
+
+function fifthLeft(car) {
+    forwardUntillNthLeft(car, 5);
+    firstLeft(car);
+}
+  // UC:  forward until wall, turn left, forward until wall, turn right, forward until wall, turn left, forward until wall  - this is not the most efficient way to do it, but it works for now.                                
