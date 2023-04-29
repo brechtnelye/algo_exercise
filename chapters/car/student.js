@@ -231,7 +231,6 @@ function forwardUntillNthLeft(car, nlefts) {
 }
 
 
-
 function fourthRight(car) {
     forwardUntillNthRight(car, 4);
     firstRight(car);
@@ -241,4 +240,28 @@ function fifthLeft(car) {
     forwardUntillNthLeft(car, 5);
     firstLeft(car);
 }
-  // UC:  forward until wall, turn left, forward until wall, turn right, forward until wall, turn left, forward until wall  - this is not the most efficient way to do it, but it works for now.                                
+
+function maze(car) {
+    R(2);
+    L(1);
+    L(2);
+    L(2);
+    R(4);
+    R(1);
+    L(3);
+    forwardUntilWall(car);
+
+    function L(n) {
+        forwardUntillNthLeft(car, n);
+        turnLeft(car);
+    }
+
+    function R(n) {
+        forwardUntillNthRight(car, n);
+        turnRight(car);
+    }
+
+
+    
+
+} // UC:  forward until wall, turn left, forward until wall, turn right, forward until wall, turn left, forward until wall  - this is not the most efficient way to do it, but it works for now.                                
