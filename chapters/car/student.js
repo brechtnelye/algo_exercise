@@ -56,3 +56,50 @@ function uTurn(bike) {
     turnRight(bike);
     twiceForward(bike);
 }
+
+function forwardN(bike, steps) {
+    let i = steps;
+
+    while(i > 0) {
+        forward(bike);
+        i--;
+    }
+}
+
+function crookedUTurn(bike) {
+    forwardN(bike, 7);
+    turnRight(bike);
+    forwardN(bike, 9);
+    turnRight(bike);
+    forwardN(bike, 3);
+}
+
+function forwardUntilWall(bike) {
+    while(!sensor(bike)) {
+        forward(bike);
+    }
+}
+
+function smartEllShape(bike) {
+    forwardUntilWall(bike);
+    turnRight(bike);
+    forwardUntilWall(bike);
+}
+
+function spiral(car) {
+    while(!sensor(car)) {
+        forwardUntilWall(car);
+        turnRight(car);
+    }
+}
+
+function turnLeft(car) {
+    turnRight(car);
+    turnRight(car);
+    turnRight(car);
+}
+
+function left(car) {
+    turnLeft(car);
+    forward(car);
+}
